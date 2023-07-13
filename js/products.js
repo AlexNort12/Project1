@@ -20,7 +20,7 @@ function Delete(){
 }
 
 
-
+// wefweggerg
 
 function update(){
 	spawn.appendChild(adder_li);
