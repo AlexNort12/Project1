@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap');
+*{
+	font-family: 'Darumadrop One', cursive;
+}
+body{
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+.upt{
+	display: none;
+}
+main{
+	flex: 1 1 auto;
+}
+.header__menu{
+	position: absolute;
+	z-index: 1;
+	background-color:#910022;
+	width: 200px;
+	height: 300px;
+	padding: 20px;
+	display: none;
+}
+.nav__list{
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+	width: 40%;
+	
+}
+	
+}
+.is-active{
+	display: block;
+}
+.itc-slider{
+  width: 50%;
+  
+
+}
+.shop_img{
+  width: 100%;
+  height: 600px;
+
+}
+.maps__title{
+	color: purple;
+	text-align: center;
+}
+
+.google__title, .yandex__title{
+	text-align: center;
+	font-size: 40px;
+
+}
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.header{
+	background-color: purple;
+}
+.nav{
+	display: flex;
+	justify-content:space-between;
+	align-items:center ;
+}
+.logo{
+	font-size: 50px;
+	color: green;
+	padding: 20px;
+	border-radius: 20px;
+	letter-spacing: 10px;
+}
+.nav__link{
+	text-decoration: none;
+	font-size: 25px;
+	margin: 0 auto;
+	color: #53d4cb;
+}
+.theme__list{
+	display: flex;
+	list-style: none;
+}
+.theme__light{
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	cursor: pointer;
+	background-color: white;
+	border: 1px solid white;
+}
+.theme__dark{
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	cursor: pointer;
+	background-color: black;
+	border: 1px solid white;
+}
+.footer{
+	background: purple;
+}
+.container_footer{
+	padding: 70px 0;
+}
+.footer__text{
+	font-size: 25px;
+	color:green;
+	margin: 0;
+}
+.logo{
+	font-size: 50px;
+	color: #53d4cb;
+}
+.header{
+	background: #e693ed;
+}
+.burger{
+	display: none;
+}
+.burger__line{
+		width: 50px;
+		height: 6px;
+		background-color: white;
+		margin: 10px;
+		transition: all 0.5s ease;
+	}
+	.time{
+		font-size: 50px;
+		animation: time 3s infinite reverse ease;
+
+	}
+	.container_clock{
+		display: flex;
+		justify-content: center;
+	}
+	#v{
+		width: 100%;
+	}
+	.vidos{
+		position: relative;
+	}
+	.video_content{
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		background: rgba(0,0,0,0.5);
+	}
+	.video_title{
+		color: white;
+	}
+	.sound_content{
+		
+	}
+	.button_basket{
+		background: none;
+		border: none;
+		cursor: pointer;
+		
+	}
+	.basket{
+		display: flex;
+		align-items: center;
+		position: fixed;
+		left: 100;
+		right: 0;
+		top: 30px;
+		z-index: 9;
+		margin-right: 100px;
+	}
+	@keyframes navLinkAnim{
+		from{
+			opacity: 0;
+			transform: translateX(10%);
+		}
+		to{
+			opacity: 1;
+			transform: translateX(0%);
+		}
+	}
+
+@media screen and (max-width:1000px){
+	body{
+		overflow-x: hidden;
+	}
+	.nav__list{
+		display: flex;
+		flex-direction: column;
+		background-color: salmon;
+		position: absolute;
+		z-index: 2;
+		align-items: center;
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in;
+		height: 40vh;
+		right: 0px;
+		top: 150px
+
+	}
+	.nav__list_active{
+		transform: translateX(0%);
+	}
+	.container{
+		max-width: 600px;
+	}
+	.burger{
+		display: block;
+		cursor: pointer;
+	}
+	.active .burger__line_1{
+		transform: rotate(45deg) translate(-10px,9px);
+		
+
+     
+	}
+	.active .burger__line_2{
+		display: none;
+		opacity: 0;
+
+
+		
+	}
+  .active .burger__line_3{
+  	transform: rotate(-45deg) translate(1px,-22px);
+  		
+		
+	}
+	.nav_link{
+		opacity: 0w;
+	}
+
+
+}
+

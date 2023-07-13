@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Drum kits</title>
+	
+	<link rel="stylesheet" type="text/css"href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/itc-slider.css">
+	<link rel="stylesheet" type="text/css" href="css/accordion.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+
+	
+
+</head>
+<body>
+	
+	<header class="header">
+		<div class="container">
+			<nav class="nav">
+				<h4 class="logo">ODW</h4>
+
+				<ul class="nav__list">
+					<li class="nav__item"><a class="nav__link" href="#">Главная</a></li>
+					<li class="nav__item"><a class="nav__link" href="#">Сведение</a></li>
+					<li class="nav__item"><a class="nav__link" href="#">Мастеринг</a></li>
+					<li class="nav__item"><a class="nav__link" href="#">Драмкиты</a></li>
+					
+					
+				</ul>
+				<div class="burger" onclick="burgerClick()">
+					<div class="burger__line burger__line_1"></div>
+					<div class="burger__line burger__line_2"></div>
+					<div class="burger__line burger__line_3"></div>
+				</div>
+			</nav>
+			<button class="btn_menu" id="btn-menu">menu</button>
+			<div class="header__menu" id="menu">
+			<ul class="menu__list">
+				<li class="menu__item"><a href="#">Вход</a></li>
+				<li class="menu__item"><a href="basket.html">Корзина</a></li>
+				<li class="menu__item"><a href="#">Реклама</a></li>
+				<li class="menu__item"><a href="#">О нас</a></li>
+				<li class="menu__item">
+					<div class="theme">
+						<h4 class="theme__title">Тема</h4>
+						<ul class="theme__list">
+							<li class="theme__item">
+								<div class="theme__dark" onclick="choiceDark()"></div>
+							</li>
+							<li class="theme__item">
+								<div class="theme__light"onclick="choiceLight()"></div>
+								
+							</li>
+							
+						</ul>
+						
+					</div>
+				</li>
+
+
+			</ul>
+
+			</div>
+			
+			
+		</div>
+	</header>
+	<main class="main">
+		<div class="basket">
+			<button class="button_basket">
+
+				<a class="bsk" href="basket.html">
+					<img class="in_bsk" src="img/корзина.png">
+
+				</a>
+			</button>
+			<p class="price">0</p>
+		</div>
+		<seсtion class="shop">
+		<div class="container">
+			
+			<h1 class="shop_title">Drum kits</h1>
+			<div class="itc-slider" data-slider="itc-slider">
+				<div class="itc-slider__wrapper">
+					<div class="itc-slider__items">
+						<div class="itc-slider__item">
+							<img src="img/DK.jpg" class="shop_img">
+						</div>
+							
+							
+					
+						<div class="itc-slider__item">
+							<img src="img/DK2.png" class="shop_img">
+						</div>
+						<div class="itc-slider__item">
+							<img src="img/DK3.png" class="shop_img">
+							
+						</div>
+						<div class="itc-slider__item">
+							<img src="img/DK4.png" class="shop_img">
+							
+						</div>
+							
+						
+					</div>
+				</div>
+				<button class="itc-slider__btn itc-slider__btn_prev"></button>
+				<button class="itc-slider__btn itc-slider__btn_next"></button>
+			</div>
+			<div class="accordion" id="accordion-1">
+				<div class="accordion__item">
+					<h2 class="accordion__header">О товаре</h2>
+					<div class="accordion__body">
+						<p class="shop_text">Ultimate Drums<br> Мы знаем, что поиск идеальных сэмплов ударных может занять несколько часов.<br> Но теперь с этим комплектом вам никогда не придется тратить больше минуты, чтобы найти подходящий сэмпл для вашего трека!<br>
+						</p>
+
+						
+					</div>
+					
+				</div>
+				<div class="accordion__item">
+					<h2 class="accordion__header">Цена</h2>
+					<div class="accordion__body">
+						<p class="shop__price">450 руб</p>
+						<button class="shop__btn" id="btn" onclick="buy()">Купить</button>
+						
+					</div>
+
+					
+				</div>
+				
+			</div>
+			
+			
+			
+
+		</div>
+	</seсtion>
+	<section class="clock">
+		<div class="container container_clock">
+			<p class="time" id="time"></p>
+		</div>
+	</section>
+	<section class="maps">
+		<div class="map__a">
+			<div class="container container_maps">
+				<h2 class="maps__title">Точка самовывоза</h2>
+				<div class="google">
+					<h3 class="google__title">Гугл карты</h3>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4935694.00232757!2d67.16771182499998!3d52.02956130000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42f82912b158c7c3%3A0x175d77465ed186ce!2z0YPQuy4g0JvQtdC90LjQvdCw!5e1!3m2!1sru!2sru!4v1682613187204!5m2!1sru!2sru" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					
+				</div>
+				<div class="yandex">
+					<h3 class="yandex__title"></h3>
+					<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5eeba7ae6046bf7640963a12ec08190073333087eb08f860e2d06be6a9d9eba3&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
+					
+				</div>
+
+				
+			</div>
+			
+		</div>
+		
+	</section>
+	<section class="vidos">
+		<video autoplay muted id="v"> 
+			<source src="video/v1.mp4" type="video/mp4">
+
+		</video>
+		<div class="video_content">
+			<div class="container">
+				<h3 class="video_title">
+					Клипы автоматизации и их создание
+				</h3>
+				<button class="button_video" id="pause" onclick="stop()">||</button>
+				<button class="button_video" id="mute1" onclick="mute1()">mute</button>
+				<button class="button_video" id="prev1" onclick="prev1()">prev</button>
+				<button class="button_video" id="next1" onclick="next1()">next</button>
+			</div>
+		</div>
+		
+	</section>
+
+	</main>
+	<footer class="footer">
+		<div class="container container__footer">
+			<p class="footer__text">
+				&copy;ODW</p>
+			
+		</div>
+		
+	</footer>
+	
+
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/itc-slider.js"></script>
+	<script type="text/javascript" src="js/menu.js"></script>
+	<script type="text/javascript" src="js/accordion.js"></script>
+	<script type="text/javascript" src="js/theme.js"></script>
+	<script type="text/javascript" src="js/burger.js"></script>
+	<script type="text/javascript" src="js/time.js"></script>
+	<script type="text/javascript" src="js/player.js"></script>
+
+
+
+
+
+</body>
+</html>
